@@ -1,210 +1,167 @@
 /* GLOBAL */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: "Poppins", sans-serif;
-    background: #ffffff;
-    color: #222;
-    line-height: 1.6;
+    font-family: "Poppins", sans-serif;
+    background: #ffffff;
+    color: #222;
+    line-height: 1.6;
 }
 
 /* NAVBAR */
 header {
-    background: linear-gradient(135deg, #6C63FF, #4F46E5);
-    color: #fff;
-    padding-bottom: 80px;
+    background: linear-gradient(135deg, #6C63FF, #4F46E5);
+    color: #fff;
+    padding-bottom: 80px;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
 }
 
 nav .logo {
-    font-size: 26px;
-    font-weight: 700;
+    font-size: 26px;
+    font-weight: 700;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
+    list-style: none;
+    display: flex;
 }
 
 nav ul li {
-    margin-left: 20px;
+    margin-left: 20px;
 }
 
 nav ul li a {
-    color: #ffffffcc;
-    font-size: 16px;
-    text-decoration: none;
-    transition: 0.3s;
+    color: #ffffffcc;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
 nav ul li a:hover {
-    color: #fff;
+    color: #fff;
 }
 
 /* HERO SECTION */
 .hero {
-    text-align: center;
-    padding: 70px 8%;
+    text-align: center;
+    padding: 70px 8%;
 }
 
 .hero h1 {
-    font-size: 48px;
-    font-weight: 700;
+    font-size: 48px;
+    font-weight: 700;
 }
 
 .hero p {
-    margin: 20px auto;
-    font-size: 18px;
-    max-width: 600px;
+    margin: 20px auto;
+    font-size: 18px;
+    max-width: 600px;
 }
 
 .btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 15px 30px;
-    background: #fff;
-    color: #4F46E5;
-    font-size: 18px;
-    font-weight: 600;
-    border-radius: 10px;
-    text-decoration: none;
-    transition: 0.3s;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background: #fff;
+    color: #4F46E5;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
 .btn:hover {
-    background: #f1f1f1;
+    background: #f1f1f1;
 }
 
 .large-btn {
-    padding: 18px 40px;
-    font-size: 20px;
+    padding: 18px 40px;
+    font-size: 20px;
 }
 
 /* FEATURES */
 .features {
-    padding: 80px 8%;
-    text-align: center;
+    padding: 80px 8%;
+    text-align: center;
 }
 
 .features h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
+    font-size: 36px;
+    margin-bottom: 40px;
 }
 
 .feature-list {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .feature-item {
-    background: #f9f9ff;
-    padding: 30px;
-    width: 300px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    transition: 0.3s;
+    background: #f9f9ff;
+    padding: 30px;
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: 0.3s;
 }
 
 .feature-item:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px);
 }
 
 /* SCREENSHOTS */
 .screenshots {
-    padding: 80px 8%;
-    text-align: center;
+    padding: 80px 8%;
+    text-align: center;
 }
 
 .screenshots h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
+    font-size: 36px;
+    margin-bottom: 40px;
 }
 
 .images {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
 }
 
 .images img {
-    width: 250px;
-    border-radius: 20px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 /* DOWNLOAD */
 .download {
-    padding: 80px 8%;
-    text-align: center;
-    background: #f5f5f7;
+    padding: 80px 8%;
+    text-align: center;
+    background: #f5f5f7;
 }
 
 .download h2 {
-    font-size: 36px;
-    margin-bottom: 10px;
+    font-size: 36px;
+    margin-bottom: 10px;
 }
 
 /* FOOTER */
 footer {
-    text-align: center;
-    padding: 20px;
-    background: #222;
-    color: #bbb;
-    font-size: 14px;
-}
-
-
-/* --- YOUTUBE VIDEO STİLİ (YENİ EKLENEN KISIM) --- */
-
-/* Video Kutusu Kapsayıcısı */
-.video-container {
-    /* Resimdeki koyu arkaplan rengine benzer bir renk */
-    background-color: #37474f; 
-    padding: 30px;
-    margin: 40px auto; /* Üstten/alttan boşluk ve yatayda ortalama */
-    max-width: 500px; /* Maksimum genişlik ile ortada tutar */
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); /* Derinlik hissi verir */
-    text-align: left; /* İçindeki yazıları sola yaslar (resimdeki gibi) */
-}
-
-/* iframe için responsive ve boyutlandırma */
-.video-container iframe {
-    display: block;
-    width: 100%;
-    /* 16:9 en boy oranı korumak için */
-    aspect-ratio: 16 / 9; 
-    border-radius: 8px; /* iframe köşelerini yuvarla */
-    margin-bottom: 20px;
-}
-
-/* Video altındaki metin stilleri */
-.video-text-overlay {
-    color: #f1f1f1; /* Açık renkli yazı */
-    padding-top: 10px;
-}
-
-.video-text-overlay strong {
-    font-size: 20px;
-    display: block;
-    margin-bottom: 10px;
-}
-
-.video-text-overlay p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 0;
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: #bbb;
+    font-size: 14px;
 }
