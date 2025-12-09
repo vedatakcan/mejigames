@@ -135,18 +135,18 @@ nav ul li a:hover {
 /* SECTIONS */
 .info-section {
     padding: 80px 8%;
-    /* Body arka plan rengiyle aynı (Categories ve Tracking) */
+    /* Body arka plan rengiyle aynı (Categories, Daily ve Tracking) */
     background: #243939;
 }
 
-/* dark-bg, görseldeki Açık Lime Yeşil alan oluyor (Daily Training) */
+/* dark-bg sınıfını kaldırarak, Categories ve Tracking ile aynı rengi almasını sağlıyoruz. */
 .dark-bg {
-    background: #9dc35a;
-    color: #1f3131; /* Yazı rengini koyu yapıyoruz */
+    background: #243939; /* info-section ile aynı koyu arka plan */
+    color: #eaeaea; /* Yazı rengini tekrar açık yapıyoruz */
 }
 
 .dark-bg h2, .dark-bg p {
-    color: #1f3131; /* Başlık ve paragraf rengini koyu yapıyoruz */
+    color: #fff; /* Başlık ve paragraf rengini tekrar beyaz/açık yapıyoruz */
 }
 
 .content-container {
