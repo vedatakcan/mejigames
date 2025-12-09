@@ -114,6 +114,33 @@ nav ul li a:hover {
     font-size: 20px;
 }
 
+/* VİDEO BÖLÜMÜ STİLLERİ (YENİ EKLENEN KISIM) */
+.video-section {
+    padding: 60px 8%; /* Üstten ve alttan boşluk ekler */
+    background: #2a4143; /* Ana arka plan rengiyle uyumlu */
+    text-align: center;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 en boy oranını korur (9/16 = 0.5625) */
+    height: 0;
+    overflow: hidden;
+    max-width: 900px; /* Video alanının maksimum genişliği */
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); /* Hafif gölge efekti */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 4px solid #f1f1f1; 
+    border-radius: 12px;
+}
 /* SADECE KOYU ARKA PLAN TANIMLANIYOR (dark-bg) */
 .dark-bg { 
     background: #203537; 
@@ -208,5 +235,9 @@ footer {
     }
     .hero h1 {
         font-size: 36px;
+    }
+    /* Mobil cihazlarda video bölümü boşluğunu ayarlama */
+    .video-section {
+        padding: 40px 5%; 
     }
 }
