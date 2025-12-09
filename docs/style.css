@@ -106,45 +106,72 @@ nav ul li a:hover {
     font-size: 20px;
 }
 
-/* FEATURES */
-.features {
+/* YENİ BÖLÜMLERİN ARKA PLAN RENKLERİ */
+.dark-bg { 
+    background: #2a4143; 
+    color: #f1f1f1;
+}
+
+.green-bg {
+    /* Ekran görüntülerindeki canlı yeşil arka plan */
+    background: #90ee90; 
+    color: #222;
+}
+
+.green-bg h2, .green-bg p {
+    color: #222; /* Yeşil arka planda yazı rengini koyu yap */
+}
+
+/* YAN YANA İÇERİK BÖLÜMLERİ İÇİN TEMEL STİL (ÖNCEKİ FEATURES'IN YERİNE) */
+.info-section {
     padding: 80px 8%;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Dikey olarak hizala */
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Küçük ekranlarda alt alta düşsün */
+}
+
+/* Ters düzen (Metin solda, görsel sağda) */
+.content-container.reverse-layout {
+    flex-direction: row-reverse;
+}
+
+.text-content {
+    flex: 1;
+    min-width: 300px; /* Metin alanının minimum genişliği */
+}
+
+.text-content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-size: 17px;
+}
+
+.visual {
+    flex: 1;
+    max-width: 300px; /* Telefon görselinin maksimum genişliği */
     text-align: center;
 }
 
-.features h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
+.visual img {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    /* Görsel etrafındaki beyaz çerçeve */
+    border: 8px solid #f1f1f1; 
 }
 
-.feature-list {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.feature-item {
-    /* Özellik kutuları için daha açık bir yeşil ton */
-    background: #3a5c5e; 
-    color: #e5e5e5;
-    padding: 30px;
-    width: 300px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    transition: 0.3s;
-}
-
-.feature-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
-}
-
-.feature-item h3 {
-    color: #fff; /* Başlık rengi daha belirgin */
-}
-
-/* SCREENSHOTS */
+/* SCREENSHOTS (Kodu koruduk) */
 .screenshots {
     padding: 80px 8%;
     text-align: center;
@@ -165,17 +192,14 @@ nav ul li a:hover {
 .images img {
     width: 250px;
     border-radius: 20px;
-    /* Görüntü etrafında daha belirgin bir gölge */
     box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-    /* Görüntüye beyaz kenarlık ekleme */
     border: 4px solid #f1f1f1; 
 }
 
-/* DOWNLOAD */
+/* DOWNLOAD (Kodu koruduk) */
 .download {
     padding: 80px 8%;
     text-align: center;
-    /* İndirme bölümü için farklı bir arka plan tonu */
     background: #3a5c5e; 
 }
 
@@ -184,12 +208,29 @@ nav ul li a:hover {
     margin-bottom: 10px;
 }
 
-/* FOOTER */
+/* FOOTER (Kodu koruduk) */
 footer {
     text-align: center;
     padding: 20px;
-    /* En alt bölüm için en koyu ton */
     background: #1e3132; 
     color: #bbb;
     font-size: 14px;
+}
+
+/* RESPONSIVE DÜZENLEME */
+@media (max-width: 768px) {
+    .content-container, .content-container.reverse-layout {
+        flex-direction: column; /* Küçük ekranlarda tüm içerik alt alta */
+        text-align: center;
+    }
+    .text-content {
+        order: 2; /* Metinler görselin altına gelsin */
+    }
+    .visual {
+        order: 1; /* Görseller metnin üstüne gelsin */
+        margin-bottom: 30px;
+    }
+    .hero h1 {
+        font-size: 36px;
+    }
 }
