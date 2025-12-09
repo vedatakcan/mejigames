@@ -14,14 +14,13 @@ body {
     line-height: 1.6;
 }
 
-/* YENİ: Başlıklar ve önemli metinler için renk ayarı */
+/* Başlıklar ve önemli metinler */
 h1, h2, h3 {
     color: #e5e5e5;
 }
 
 /* NAVBAR */
 header {
-    /* Başlık ve menü için koyu yeşil ton */
     background: #1e3132;
     padding-bottom: 80px;
 }
@@ -31,7 +30,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 25px 8%;
-    /* Navbar'ın sayfanın üstünde kalması için (ekran görüntülerindeki gibi) */
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -84,12 +82,11 @@ nav ul li a:hover {
     display: inline-block;
     margin-top: 20px;
     padding: 15px 30px;
-    /* Buton için canlı bir yeşil ton */
     background: #4CAF50; 
     color: #fff; 
     font-size: 18px;
     font-weight: 600;
-    border-radius: 6px; /* Daha az yuvarlak butonlar */
+    border-radius: 6px;
     text-decoration: none;
     transition: 0.3s;
     border: none;
@@ -97,7 +94,6 @@ nav ul li a:hover {
 }
 
 .btn:hover {
-    /* Buton hover rengi */
     background: #45a049; 
 }
 
@@ -106,23 +102,18 @@ nav ul li a:hover {
     font-size: 20px;
 }
 
-/* YENİ BÖLÜMLERİN ARKA PLAN RENKLERİ */
-.dark-bg { 
+/* Arka plan renklerini koyu tema ile birleştir */
+.dark-bg, .green-bg {
     background: #2a4143; 
     color: #f1f1f1;
 }
 
-.green-bg {
-    /* Ekran görüntülerindeki canlı yeşil arka plan */
-    background: #90ee90; 
-    color: #222;
+.dark-bg h2, .green-bg h2,
+.dark-bg p, .green-bg p {
+    color: #f1f1f1;
 }
 
-.green-bg h2, .green-bg p {
-    color: #222; /* Yeşil arka planda yazı rengini koyu yap */
-}
-
-/* YAN YANA İÇERİK BÖLÜMLERİ İÇİN TEMEL STİL */
+/* YAN YANA İÇERİK BÖLÜMLERİ */
 .info-section {
     padding: 80px 8%;
 }
@@ -130,21 +121,20 @@ nav ul li a:hover {
 .content-container {
     display: flex;
     justify-content: center;
-    align-items: center; /* Dikey olarak hizala */
+    align-items: center;
     gap: 50px;
     max-width: 1200px;
     margin: 0 auto;
-    flex-wrap: wrap; /* Küçük ekranlarda alt alta düşsün */
+    flex-wrap: wrap;
 }
 
-/* Ters düzen (Metin solda, görsel sağda) */
 .content-container.reverse-layout {
     flex-direction: row-reverse;
 }
 
 .text-content {
     flex: 1;
-    min-width: 300px; /* Metin alanının minimum genişliği */
+    min-width: 300px;
 }
 
 .text-content h2 {
@@ -158,7 +148,7 @@ nav ul li a:hover {
 
 .visual {
     flex: 1;
-    max-width: 300px; /* Telefon görselinin maksimum genişliği */
+    max-width: 300px;
     text-align: center;
 }
 
@@ -167,7 +157,6 @@ nav ul li a:hover {
     height: auto;
     border-radius: 25px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    /* Görsel etrafındaki beyaz çerçeve */
     border: 8px solid #f1f1f1; 
 }
 
@@ -195,14 +184,14 @@ footer {
 /* RESPONSIVE DÜZENLEME */
 @media (max-width: 768px) {
     .content-container, .content-container.reverse-layout {
-        flex-direction: column; /* Küçük ekranlarda tüm içerik alt alta */
+        flex-direction: column;
         text-align: center;
     }
     .text-content {
-        order: 2; /* Metinler görselin altına gelsin */
+        order: 2;
     }
     .visual {
-        order: 1; /* Görseller metnin üstüne gelsin */
+        order: 1;
         margin-bottom: 30px;
     }
     .hero h1 {
