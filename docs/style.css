@@ -7,21 +7,18 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    /* Ana Koyu yeşil arka plan rengi */
-    background: #2a4143; 
-    /* Açık renkli yazı */
-    color: #f1f1f1; 
+    background: #1a1f1f;
+    color: #eaeaea;
     line-height: 1.6;
 }
 
-/* Başlıklar ve önemli metinler */
 h1, h2, h3 {
-    color: #e5e5e5;
+    color: #fff;
 }
 
 /* NAVBAR */
 header {
-    background: #1e3132;
+    background: #111616;
     padding-bottom: 80px;
 }
 
@@ -30,27 +27,19 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 25px 8%;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    transition: background 0.3s, backdrop-filter 0.3s;
 }
 
-/* BURASI ÇOK ÖNEMLİ: Logo ikonu ve yazısını yan yana ve ortada tutmak için */
 nav .logo {
-    display: flex; 
-    align-items: center; 
+    display: flex;
+    align-items: center;
     font-size: 26px;
     font-weight: 700;
 }
 
-/* YENİ: NAVBAR İKON STİLİ KESİNLEŞTİRİLİYOR */
 .nav-icon {
-    height: 30px; /* İkonun boyutu */
+    height: 30px;
     width: 30px;
-    margin-right: 8px; /* Yazı ile arasında boşluk */
-    /* İkon yuvarlak bir görüntüye sahipse bu satırı açabilirsiniz: */
-    /* border-radius: 50%; */
+    margin-right: 8px;
 }
 
 nav ul {
@@ -63,9 +52,9 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #f1f1f1cc;
-    font-size: 16px;
+    color: #d7d7d7;
     text-decoration: none;
+    font-size: 16px;
     transition: 0.3s;
 }
 
@@ -73,7 +62,7 @@ nav ul li a:hover {
     color: #fff;
 }
 
-/* HERO SECTION */
+/* HERO */
 .hero {
     text-align: center;
     padding: 70px 8%;
@@ -86,27 +75,24 @@ nav ul li a:hover {
 
 .hero p {
     margin: 20px auto;
-    font-size: 18px;
     max-width: 600px;
+    font-size: 18px;
+    color: #dcdcdc;
 }
 
 .btn {
     display: inline-block;
-    margin-top: 20px;
     padding: 15px 30px;
-    background: #4CAF50; 
-    color: #fff; 
-    font-size: 18px;
+    background: #4CAF50;
+    color: #fff;
     font-weight: 600;
     border-radius: 6px;
     text-decoration: none;
     transition: 0.3s;
-    border: none;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .btn:hover {
-    background: #45a049; 
+    background: #3f9542;
 }
 
 .large-btn {
@@ -114,22 +100,21 @@ nav ul li a:hover {
     font-size: 20px;
 }
 
-/* VİDEO BÖLÜMÜ STİLLERİ (YENİ EKLENEN KISIM) */
+/* VIDEO */
 .video-section {
-    padding: 60px 8%; /* Üstten ve alttan boşluk ekler */
-    background: #2a4143; /* Ana arka plan rengiyle uyumlu */
+    padding: 60px 8%;
+    background: #1a1f1f;
     text-align: center;
 }
 
 .video-container {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 en boy oranını korur (9/16 = 0.5625) */
+    padding-bottom: 56.25%;
     height: 0;
-    overflow: hidden;
-    max-width: 900px; /* Video alanının maksimum genişliği */
+    max-width: 900px;
     margin: 0 auto;
     border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); /* Hafif gölge efekti */
+    overflow: hidden;
 }
 
 .video-container iframe {
@@ -138,31 +123,25 @@ nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    border: 4px solid #f1f1f1; 
-    border-radius: 12px;
-}
-/* SADECE KOYU ARKA PLAN TANIMLANIYOR (dark-bg) */
-.dark-bg { 
-    background: #203537; 
-    color: #f1f1f1;
+    border: none;
 }
 
-.dark-bg h2, .dark-bg p {
-    color: #f1f1f1;
-}
-
-/* YAN YANA İÇERİK BÖLÜMLERİ */
+/* SECTIONS */
 .info-section {
     padding: 80px 8%;
+    background: #1a1f1f;
+}
+
+.dark-bg {
+    background: #121717;
 }
 
 .content-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 50px;
     max-width: 1200px;
     margin: 0 auto;
+    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -180,30 +159,23 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-.text-content p {
-    font-size: 17px;
-}
-
 .visual {
     flex: 1;
-    max-width: 300px;
-    text-align: center;
+    max-width: 350px;
 }
 
 .visual img {
     width: 100%;
-    height: auto;
-    border-radius: 25px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    /* Görsel çevresindeki beyaz çerçeveyi koruyoruz */
-    border: 8px solid #f1f1f1; 
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    border: none; /* Fıstık yeşili ve beyaz çerçeve tamamen kaldırıldı */
 }
 
 /* DOWNLOAD */
 .download {
     padding: 80px 8%;
     text-align: center;
-    background: #3a5c5e; 
+    background: #0f1414;
 }
 
 .download h2 {
@@ -215,29 +187,18 @@ nav ul li a:hover {
 footer {
     text-align: center;
     padding: 20px;
-    background: #1e3132; 
-    color: #bbb;
-    font-size: 14px;
+    background: #111616;
+    color: #888;
 }
 
-/* RESPONSIVE DÜZENLEME */
+/* RESPONSIVE */
 @media (max-width: 768px) {
-    .content-container, .content-container.reverse-layout {
+    .content-container {
         flex-direction: column;
         text-align: center;
     }
-    .text-content {
-        order: 2;
-    }
-    .visual {
-        order: 1;
-        margin-bottom: 30px;
-    }
+
     .hero h1 {
         font-size: 36px;
-    }
-    /* Mobil cihazlarda video bölümü boşluğunu ayarlama */
-    .video-section {
-        padding: 40px 5%; 
     }
 }
