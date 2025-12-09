@@ -7,7 +7,8 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    background: #1a1f1f;
+    /* Ana Koyu Petrol Yeşili/Mavi-Gri Arka Plan */
+    background: #243939; 
     color: #eaeaea;
     line-height: 1.6;
 }
@@ -18,7 +19,8 @@ h1, h2, h3 {
 
 /* NAVBAR */
 header {
-    background: #111616;
+    /* Navbar ve Footer için En Koyu Arka Plan */
+    background: #1f3131;
     padding-bottom: 80px;
 }
 
@@ -83,7 +85,8 @@ nav ul li a:hover {
 .btn {
     display: inline-block;
     padding: 15px 30px;
-    background: #4CAF50;
+    /* Buton Yeşili (Görseldeki yeşile yakın) */
+    background: #589c36;
     color: #fff;
     font-weight: 600;
     border-radius: 6px;
@@ -92,7 +95,7 @@ nav ul li a:hover {
 }
 
 .btn:hover {
-    background: #3f9542;
+    background: #4a872e;
 }
 
 .large-btn {
@@ -103,7 +106,8 @@ nav ul li a:hover {
 /* VIDEO */
 .video-section {
     padding: 60px 8%;
-    background: #1a1f1f;
+    /* Body arka plan rengiyle aynı */
+    background: #243939;
     text-align: center;
 }
 
@@ -115,6 +119,8 @@ nav ul li a:hover {
     margin: 0 auto;
     border-radius: 12px;
     overflow: hidden;
+    /* Video etrafındaki çerçeveye dikkat ettim, koyu gölgeler görseldeki gibi */
+    box-shadow: 0 0 0 4px #4a6868, 0 10px 30px rgba(0,0,0,0.4); 
 }
 
 .video-container iframe {
@@ -129,11 +135,18 @@ nav ul li a:hover {
 /* SECTIONS */
 .info-section {
     padding: 80px 8%;
-    background: #1a1f1f;
+    /* Body arka plan rengiyle aynı (Categories ve Tracking) */
+    background: #243939;
 }
 
+/* dark-bg, görseldeki Açık Lime Yeşil alan oluyor (Daily Training) */
 .dark-bg {
-    background: #121717;
+    background: #9dc35a;
+    color: #1f3131; /* Yazı rengini koyu yapıyoruz */
+}
+
+.dark-bg h2, .dark-bg p {
+    color: #1f3131; /* Başlık ve paragraf rengini koyu yapıyoruz */
 }
 
 .content-container {
@@ -168,14 +181,16 @@ nav ul li a:hover {
     width: 100%;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-    border: none;
+    /* Görsel çevresindeki beyaz/açık çerçeve */
+    border: 8px solid #f1f1f1; 
 }
 
 /* DOWNLOAD */
 .download {
     padding: 80px 8%;
     text-align: center;
-    background: #0f1414;
+    /* Navbar ve Footer ile aynı veya yakın koyu yeşil */
+    background: #1f3131;
 }
 
 .download h2 {
@@ -187,7 +202,8 @@ nav ul li a:hover {
 footer {
     text-align: center;
     padding: 20px;
-    background: #111616;
+    /* Navbar ve Download ile aynı koyu arka plan */
+    background: #1f3131;
     color: #888;
 }
 
