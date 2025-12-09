@@ -36,7 +36,10 @@ nav {
     transition: background 0.3s, backdrop-filter 0.3s;
 }
 
+/* Mevcut logo stili güncelleniyor */
 nav .logo {
+    display: flex; /* YENİ: İkon ve yazıyı yan yana hizalamak için */
+    align-items: center; /* YENİ: Dikeyde ortalamak için */
     font-size: 26px;
     font-weight: 700;
 }
@@ -181,6 +184,14 @@ footer {
     background: #1e3132; 
     color: #bbb;
     font-size: 14px;
+}
+
+/* YENİ: NAVBAR İKON STİLİ EKLENİYOR */
+.nav-icon {
+    height: 30px; /* İkonun boyutu */
+    width: 30px;
+    margin-right: 8px; /* Yazı ile arasında boşluk */
+    /* İkonun yuvarlak görünmesini isterseniz: border-radius: 50%; */
 }
 
 /* RESPONSIVE DÜZENLEME */
