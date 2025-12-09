@@ -7,7 +7,7 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    /* Koyu yeşil arka plan rengi */
+    /* Ana Koyu yeşil arka plan rengi */
     background: #2a4143; 
     /* Açık renkli yazı */
     color: #f1f1f1; 
@@ -102,14 +102,15 @@ nav ul li a:hover {
     font-size: 20px;
 }
 
-/* Arka plan renklerini koyu tema ile birleştir */
-.dark-bg, .green-bg {
-    background: #2a4143; 
+/* SADECE KOYU ARKA PLAN TANIMLANIYOR (dark-bg) */
+/* Diğer info-section'lar body rengini (#2a4143) miras alacak. */
+.dark-bg { 
+    /* Biraz daha koyu bir ton kullanarak şerit efekti vermek için */
+    background: #203537; 
     color: #f1f1f1;
 }
 
-.dark-bg h2, .green-bg h2,
-.dark-bg p, .green-bg p {
+.dark-bg h2, .dark-bg p {
     color: #f1f1f1;
 }
 
@@ -157,6 +158,7 @@ nav ul li a:hover {
     height: auto;
     border-radius: 25px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    /* Görsel çevresindeki beyaz çerçeveyi koruyoruz */
     border: 8px solid #f1f1f1; 
 }
 
