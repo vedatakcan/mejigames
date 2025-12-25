@@ -11,19 +11,18 @@
     <link rel="icon" type="image/png" href="meji-icon.png" />
 
     <style>
-        /* Sadece bu sayfaya özel stil düzeltmesi: Üst yeşil, alt beyaz */
+        /* Tasarım yapısını koruyan özel stiller */
         body {
-            background-color: #ffffff; /* Sayfanın genelini beyaz yap */
+            background-color: #ffffff; 
             margin: 0;
         }
 
         header {
-            background: #1f3131; /* Sadece üst kısmı koyu yeşil yap */
+            background: #1f3131; 
             text-align: center;
             padding-bottom: 80px;
         }
 
-        /* Başlık kutusunun görseldeki tasarımı */
         .policy-header-box {
             border: 3px solid #ffffff;
             padding: 20px 45px;
@@ -38,7 +37,6 @@
             color: #ffffff;
         }
 
-        /* Beyaz resmi alan */
         .official-white-section {
             background: #ffffff;
             padding: 60px 20px;
@@ -47,7 +45,7 @@
         .document-container {
             max-width: 850px;
             margin: 0 auto;
-            color: #333333; /* Metinler siyah/koyu gri */
+            color: #333333;
             text-align: left;
         }
 
@@ -58,6 +56,12 @@
             font-size: 24px;
             border-bottom: 1px solid #eeeeee;
             padding-bottom: 10px;
+        }
+
+        .document-container h3 {
+            color: #222222;
+            font-size: 20px;
+            margin-top: 25px;
         }
 
         .document-container p, .document-container li {
@@ -71,7 +75,6 @@
             margin-left: 20px;
         }
 
-        /* Alt kısım footer beyaz alana uyum sağlasın */
         .white-footer {
             background: #ffffff;
             text-align: center;
@@ -90,7 +93,6 @@
             <img src="meji-icon.png" alt="Meji Logo" class="nav-icon">
             <a href="index.html" style="color:white; text-decoration:none;">Meji</a>
         </div>
-
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="terms.html">Terms of Use</a></li>
@@ -104,60 +106,95 @@
 
 <main class="official-white-section">
     <div class="document-container">
-        <p><strong>Last Updated:</strong> December 25, 2025</p>
+        <p><strong>Last Updated:</strong> November 21, 2025</p>
 
         <p>
-            This Privacy Policy explains how <strong>Meji: Brain Training</strong> (“we”, “our”, or “us”) handles information
-            when you use our mobile application (“Application”), available on both
-            <strong>Apple App Store (iOS)</strong> and <strong>Google Play Store (Android)</strong>.
+            This Privacy Policy describes how <strong>Meji: Brain Training</strong> (“we,” “our,” or “us”) handles information when you use our mobile application (“Application”),
+            available on both <strong>Apple App Store (iOS)</strong> and <strong>Google Play Store (Android)</strong>.
         </p>
 
         <p>
-            This policy applies equally to all users, regardless of platform.
-            By using the Application, you agree to the practices described below.
+            This policy applies equally to all users of the Application, regardless of platform.
+            By using the Application, you agree to the practices described in this Privacy Policy.
         </p>
 
         <h2>1. Information We Collect</h2>
         <p>
-            We do <strong>not collect, store, or process personally identifiable information</strong>
-            such as name, email address, phone number, or contact details.
+            We do <strong>not collect, store, or process any personally identifiable information</strong> (PII),
+            such as names, email addresses, phone numbers, or contact details.
         </p>
         <p>
-            All gameplay progress, scores, preferences, and settings are stored
-            <strong>locally on your device only</strong> via a Room database. 
-            This data is never transmitted to our servers and cannot be accessed by the Developer.
+            All gameplay progress, scores, settings, and preferences are stored <strong>locally on your device only</strong>.
+            This data is never uploaded to our servers and is not accessible to the Developer.
         </p>
+        <p>We may collect limited non-personal information automatically, including:</p>
+        <ul>
+            <li><strong>Device Information:</strong> Device model, operating system version, language settings, and performance data.</li>
+            <li><strong>Advertising Identifiers:</strong> Used by advertising services to deliver relevant or non-personalized ads.</li>
+        </ul>
 
         <h2>2. Third-Party Services</h2>
-        <p>The Application uses third-party services that may collect data independently:</p>
+        <p>The Application may use third-party services that collect data independently:</p>
         <ul>
             <li>
-                <strong>Google AdMob</strong> – Used for displaying advertisements.<br/>
-                AdMob may collect advertising IDs, device identifiers, and usage-related data.
+                <strong>Google AdMob</strong> – Used to display advertisements.
+                AdMob may collect device identifiers, advertising IDs, and usage data.
                 <br/>
                 <a href="https://policies.google.com/technologies/ads" target="_blank" style="color: #589c36;">Google AdMob Privacy Policy</a>
             </li>
         </ul>
+        <p>
+            We do <strong>not</strong> sell, rent, or share user data with third parties except as required
+            to operate these services.
+        </p>
 
         <h2>3. In-App Purchases and Subscriptions</h2>
-        <p><strong>Apple App Store (iOS):</strong> Purchases are processed through Apple In-App Purchase. Payment details are handled exclusively by Apple.</p>
-        <p><strong>Google Play Store (Android):</strong> Purchases are processed through Google Play Billing. The Developer does not have access to payment information.</p>
+        <h3>Apple App Store (iOS)</h3>
+        <p>
+            All purchases and subscriptions on iOS are processed securely through
+            <strong>Apple In-App Purchase</strong>.
+            The Developer does <strong>not</strong> have access to users’ payment information.
+            <br/>
+            <a href="https://www.apple.com/legal/privacy/" target="_blank" style="color: #589c36;">Apple Privacy Policy</a>
+        </p>
+
+        <h3>Google Play Store (Android)</h3>
+        <p>
+            All purchases and subscriptions on Android are processed through
+            <strong>Google Play Billing</strong>. Payment information is collected and stored by Google.
+        </p>
+        <ul>
+            <li><a href="https://support.google.com/googleplay/answer/11416267" target="_blank" style="color: #589c36;">Google Play Billing – Privacy</a></li>
+            <li><a href="https://policies.google.com/privacy" target="_blank" style="color: #589c36;">Google Privacy Policy</a></li>
+        </ul>
 
         <h2>4. Data Security</h2>
         <p>
-            All application data stored locally remains on your device.
-            If the Application is uninstalled, this data may be permanently lost.
+            Local application data remains on your device.
+            If you uninstall the Application or change devices, this data may be permanently lost.
         </p>
 
-        <h2>5. Children’s Privacy</h2>
+        <h2>5. Data Retention</h2>
+        <ul>
+            <li><strong>Local Data:</strong> Stored until the Application is uninstalled or data is manually deleted.</li>
+            <li><strong>Third-Party Data:</strong> Retained according to the policies of Apple, Google, or advertising providers.</li>
+        </ul>
+
+        <h2>6. Children’s Privacy</h2>
         <p>
             The Application does not knowingly collect personal information from children under the age of 13.
-            Since no personal data is collected directly, the Application complies with COPPA and similar regulations.
+            The Application complies with COPPA and similar child protection laws.
         </p>
 
-        <h2>6. Contact Us</h2>
+        <h2>7. Changes to This Privacy Policy</h2>
         <p>
-            If you have questions about this Privacy Policy, please contact us:
+            We may update this Privacy Policy from time to time.
+            Changes become effective immediately upon publication on this page.
+        </p>
+
+        <h2>8. Contact Us</h2>
+        <p>
+            If you have any questions about this Privacy Policy, you may contact us at:
         </p>
         <p><strong>Email:</strong> mejigamesapp@gmail.com</p>
     </div>
