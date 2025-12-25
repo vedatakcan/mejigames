@@ -9,11 +9,82 @@
     <link rel="stylesheet" href="style.css" />
 
     <link rel="icon" type="image/png" href="meji-icon.png" />
+
+    <style>
+        /* Sadece bu sayfaya özel stil düzeltmesi: Üst yeşil, alt beyaz */
+        body {
+            background-color: #ffffff; /* Sayfanın genelini beyaz yap */
+            margin: 0;
+        }
+
+        header {
+            background: #1f3131; /* Sadece üst kısmı koyu yeşil yap */
+            text-align: center;
+            padding-bottom: 80px;
+        }
+
+        /* Başlık kutusunun görseldeki tasarımı */
+        .policy-header-box {
+            border: 3px solid #ffffff;
+            padding: 20px 45px;
+            display: inline-block;
+            margin-top: 30px;
+        }
+
+        .policy-header-box h1 {
+            font-size: 38px;
+            font-weight: 700;
+            margin: 0;
+            color: #ffffff;
+        }
+
+        /* Beyaz resmi alan */
+        .official-white-section {
+            background: #ffffff;
+            padding: 60px 20px;
+        }
+
+        .document-container {
+            max-width: 850px;
+            margin: 0 auto;
+            color: #333333; /* Metinler siyah/koyu gri */
+            text-align: left;
+        }
+
+        .document-container h2 {
+            color: #111111;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            font-size: 24px;
+            border-bottom: 1px solid #eeeeee;
+            padding-bottom: 10px;
+        }
+
+        .document-container p, .document-container li {
+            color: #444444;
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .document-container ul {
+            margin-left: 20px;
+        }
+
+        /* Alt kısım footer beyaz alana uyum sağlasın */
+        .white-footer {
+            background: #ffffff;
+            text-align: center;
+            padding: 40px;
+            color: #888888;
+            border-top: 1px solid #eeeeee;
+        }
+    </style>
 </head>
 
 <body>
 
-<header style="text-align: center; padding-bottom: 120px;">
+<header>
     <nav>
         <div class="logo">
             <img src="meji-icon.png" alt="Meji Logo" class="nav-icon">
@@ -31,8 +102,8 @@
     </div>
 </header>
 
-<main class="info-section">
-    <div class="policy-content">
+<main class="official-white-section">
+    <div class="document-container">
         <p><strong>Last Updated:</strong> December 25, 2025</p>
 
         <p>
@@ -64,22 +135,13 @@
                 <strong>Google AdMob</strong> – Used for displaying advertisements.<br/>
                 AdMob may collect advertising IDs, device identifiers, and usage-related data.
                 <br/>
-                <a href="https://policies.google.com/technologies/ads" target="_blank">Google AdMob Privacy Policy</a>
+                <a href="https://policies.google.com/technologies/ads" target="_blank" style="color: #589c36;">Google AdMob Privacy Policy</a>
             </li>
         </ul>
 
         <h2>3. In-App Purchases and Subscriptions</h2>
-        <h3>Apple App Store (iOS)</h3>
-        <p>
-            Purchases on iOS are processed through <strong>Apple In-App Purchase</strong>. 
-            Payment details are handled exclusively by Apple.
-        </p>
-
-        <h3>Google Play Store (Android)</h3>
-        <p>
-            Purchases on Android are processed through <strong>Google Play Billing</strong>. 
-            The Developer does not have access to payment information.
-        </p>
+        <p><strong>Apple App Store (iOS):</strong> Purchases are processed through Apple In-App Purchase. Payment details are handled exclusively by Apple.</p>
+        <p><strong>Google Play Store (Android):</strong> Purchases are processed through Google Play Billing. The Developer does not have access to payment information.</p>
 
         <h2>4. Data Security</h2>
         <p>
@@ -101,7 +163,7 @@
     </div>
 </main>
 
-<footer>
+<footer class="white-footer">
     © 2025 Meji Brain Training — All Rights Reserved
 </footer>
 
