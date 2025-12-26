@@ -200,10 +200,6 @@ footer {
     color: #888;
 }
 
-/* -------------------------------------------
-   YENİ EKLENEN POLİTİKA SAYFASI STİLLERİ
----------------------------------------------- */
-
 /* Beyaz çerçeveli başlık kutusu (Görseldeki stil) */
 .policy-header-box {
     border: 3px solid #ffffff;
@@ -221,9 +217,9 @@ footer {
 /* Politika Metin Alanı */
 .policy-content {
     max-width: 900px;
-    margin: -50px auto 60px; /* Header'dan aşağı taşması için */
+    margin: -50px auto 60px; 
     padding: 50px;
-    background: #2b4545; /* Hafif açık yeşil/petrol tonu */
+    background: #2b4545; 
     border-radius: 12px;
     box-shadow: 0 15px 40px rgba(0,0,0,0.4);
     position: relative;
@@ -259,6 +255,10 @@ footer {
     .content-container {
         flex-direction: column;
         text-align: center;
+    }
+
+    .content-container.reverse-layout {
+        flex-direction: column; 
     }
 
     .hero h1 {
