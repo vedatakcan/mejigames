@@ -253,12 +253,13 @@ footer {
 /* RESPONSIVE */
 @media (max-width: 768px) {
     .content-container {
-        flex-direction: column;
+        flex-direction: column-reverse; 
         text-align: center;
+        gap: 30px; 
     }
 
     .content-container.reverse-layout {
-        flex-direction: column; 
+        flex-direction: column-reverse; 
     }
 
     .hero h1 {
