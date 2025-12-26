@@ -278,3 +278,22 @@ footer {
         margin: -30px 5% 40px;
     }
 }
+
+/* Marka isminin çevrilen kelimelerle birleşmesini engeller */
+[translate="no"] {
+    display: inline-block;
+    margin-left: 0.3em;  /* Soldaki kelimeyle araya boşluk koyar */
+    margin-right: 0.1em; /* Sağdaki kelimeyle araya çok hafif boşluk koyar */
+    font-weight: 600;    /* Marka ismini hafif kalın yaparak vurgular */
+}
+
+/* Eğer marka ismi cümlenin veya butonun en başındaysa soldaki boşluğu kaldırır */
+.logo [translate="no"],
+.btn [translate="no"] {
+    margin-left: 0;
+}
+
+/* Footer içindeki birleşmeyi özel olarak önler */
+footer span[translate="no"] {
+    margin-left: 0.3em;
+}
