@@ -168,7 +168,7 @@ section {
 
 /* SECTIONS */
 .info-section {
-    padding: 80px 8%;
+    padding: 50px 8%;  
     background: #243939;
 }
 
@@ -211,6 +211,8 @@ section {
 
 .visual img {
     width: 100%;
+    max-height: 260px;      
+    object-fit: cover;    
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.4);
     border: 8px solid #f1f1f1; 
@@ -288,6 +290,15 @@ footer {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+
+    .info-section {
+        padding: 40px 6%;   
+    }
+
+    .visual img {
+        max-height: 220px; 
+    }
+    
     .content-container {
         flex-direction: column; 
         text-align: center;
@@ -371,7 +382,6 @@ function updateNavHeight() {
     );
 }
 
-// Sayfa yüklenince
 updateNavHeight();
 
 // Responsive / hamburger / resize olunca
