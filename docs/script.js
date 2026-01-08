@@ -25,3 +25,19 @@ window.addEventListener("scroll", () => {
 
 // Placeholder for future functions (mobile menu etc.)
 console.log("Landing page loaded successfully");
+
+// Mobile menu toggle
+const mobileMenuBtn = document.getElementById("mobile-menu");
+const navMenu = document.querySelector("nav ul");
+
+mobileMenuBtn.addEventListener("click", () => {
+    navMenu.classList.toggle("open");
+});
+
+// Close mobile menu after clicking a link
+document.querySelectorAll("nav ul li a").forEach(link => {
+    link.addEventListener("click", () => {
+        navMenu.classList.remove("open");
+    });
+});
+
