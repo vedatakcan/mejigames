@@ -109,6 +109,17 @@ nav ul li a:hover {
     background: #243939;
     text-align: center;
 }
+.video-section {
+    position: relative;
+}
+
+.video-section h2 {
+    margin-bottom: 40px;
+}
+
+.video-container {
+    margin-bottom: 30px;
+}
 
 .video-description {
     position: absolute;
