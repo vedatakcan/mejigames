@@ -110,6 +110,15 @@ nav ul li a:hover {
     text-align: center;
 }
 
+.video-description {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
 .video-container {
     position: relative;
     padding-bottom: 56.25%;
