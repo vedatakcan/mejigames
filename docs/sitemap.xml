@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://vedatakcan.github.io/mejigames/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://vedatakcan.github.io/mejigames/privacy.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vedatakcan.github.io/mejigames/terms.html</loc>
-    <priority>0.8</priority>
-  </url>
+  <url><loc>https://vedatakcan.github.io/mejigames/index.html</loc><priority>1.0</priority></url>
+  <url><loc>https://vedatakcan.github.io/mejigames/tr/index.html</loc><priority>0.9</priority></url>
+  <url><loc>https://vedatakcan.github.io/mejigames/de/index.html</loc><priority>0.9</priority></url>
+
+  <url><loc>https://vedatakcan.github.io/mejigames/privacy.html</loc><priority>0.8</priority></url>
+  <url><loc>https://vedatakcan.github.io/mejigames/tr/privacy.html</loc><priority>0.7</priority></url>
+  <url><loc>https://vedatakcan.github.io/mejigames/de/privacy.html</loc><priority>0.7</priority></url>
+
+  <url><loc>https://vedatakcan.github.io/mejigames/terms.html</loc><priority>0.8</priority></url>
+  <url><loc>https://vedatakcan.github.io/mejigames/tr/terms.html</loc><priority>0.7</priority></url>
+  <url><loc>https://vedatakcan.github.io/mejigames/de/terms.html</loc><priority>0.7</priority></url>
+
+  <url><loc>https://vedatakcan.github.io/mejigames/subscription.html</loc><priority>0.8</priority></url>
+  <url><loc>https://vedatakcan.github.io/mejigames/tr/subscription.html</loc><priority>0.7</priority></url>
+  <url><loc>https://vedatakcan.github.io/mejigames/de/subscription.html</loc><priority>0.7</priority></url>
 </urlset>
