@@ -1,4 +1,8 @@
 /* GLOBAL */
+:root {
+    --nav-height: 80px; /* fallback (JS çalışmazsa) */
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -63,6 +67,11 @@ nav ul li a {
 nav ul li a:hover {
     color: #fff;
 }
+
+section {
+    scroll-margin-top: var(--nav-height);
+}
+
 /* HAMBURGER MENU BUTTON */
 .menu-toggle {
     display: none; /* default: desktop'ta gizli */
@@ -349,3 +358,22 @@ footer {
 footer span[translate="no"] {
     margin-left: 0.3em;
 }
+
+// === AUTO NAV HEIGHT FOR SCROLL ===
+function updateNavHeight() {
+    const nav = document.querySelector("nav");
+    if (!nav) return;
+
+    const navHeight = nav.offsetHeight;
+    document.documentElement.style.setProperty(
+        "--nav-height",
+        `${navHeight}px`
+    );
+}
+
+// Sayfa yüklenince
+updateNavHeight();
+
+// Responsive / hamburger / resize olunca
+window.addEventListener("resize", updateNavHeight);
+
