@@ -291,14 +291,6 @@ footer {
 /* RESPONSIVE */
 @media (max-width: 768px) {
 
-    .info-section {
-        padding: 40px 6%;   
-    }
-
-    .visual img {
-        max-height: 220px; 
-    }
-    
     .content-container {
         flex-direction: column; 
         text-align: center;
