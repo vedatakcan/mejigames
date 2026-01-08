@@ -63,6 +63,13 @@ nav ul li a {
 nav ul li a:hover {
     color: #fff;
 }
+/* HAMBURGER MENU BUTTON */
+.menu-toggle {
+    display: none; /* default: desktop'ta gizli */
+    font-size: 28px;
+    color: #ffffff;
+    cursor: pointer;
+}
 
 /* HERO */
 .hero {
@@ -297,6 +304,14 @@ footer {
     .policy-content {
         padding: 25px;
         margin: -30px 5% 40px;
+    }
+        /* Mobile Navbar */
+    .menu-toggle {
+        display: block; /* mobilde görünür */
+    }
+
+    nav ul {
+        display: none; /* mobilde menüyü gizle */
     }
 }
 
