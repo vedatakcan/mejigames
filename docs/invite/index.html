@@ -11,19 +11,16 @@
   const ua = navigator.userAgent || navigator.vendor || window.opera;
 
   const isAndroid = /Android/i.test(ua);
-  const isIOS = /iPhone|iPad|iPod/i.test(ua) && !isAndroid;
+  const isIOS = /iPhone|iPad|iPod/i.test(ua);
 
-  // /tr/ kısmı kaldırıldı; Apple ID üzerinden kullanıcıyı otomatik olarak kendi ülkesinin mağazasına yönlendirecek.
   const iosStore = "https://apps.apple.com/app/id6752789849";
   const androidStore = "https://play.google.com/store/apps/details?id=com.vedatakcan.meji";
 
-  if (isAndroid) {
-    window.location.replace(androidStore);
-  } 
-  else if (isIOS) {
+  if (isIOS) {
     window.location.replace(iosStore);
-  } 
-  else {
+  } else if (isAndroid) {
+    window.location.replace(androidStore);
+  } else {
     window.location.replace("https://vedatakcan.github.io/mejigames/");
   }
 </script>
