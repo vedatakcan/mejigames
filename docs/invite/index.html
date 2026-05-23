@@ -3,26 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meji</title>
+  <title>Meji Brain Training</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #0d0e35;
+      color: white;
+      text-align: center;
+    }
+    .loader {
+      border: 4px solid rgba(255, 255, 255, 0.1);
+      border-top: 4px solid #3498db;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+      margin-bottom: 20px;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    a {
+      color: #3498db;
+      text-decoration: none;
+      margin-top: 15px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
 
+<div class="loader"></div>
+<p>Redirecting you to the store...</p>
+<a id="fallback-link" href="#">Click here if you are not redirected automatically.</a>
+
 <script>
   const ua = navigator.userAgent || navigator.vendor || window.opera;
-
   const isAndroid = /Android/i.test(ua);
   const isIOS = /iPhone|iPad|iPod/i.test(ua);
 
   const iosStore = "https://apps.apple.com/app/id6752789849";
   const androidStore = "https://play.google.com/store/apps/details?id=com.vedatakcan.meji";
+  const fallback = "https://vedatakcan.github.io/mejigames/";
+
+  let targetUrl = fallback;
 
   if (isIOS) {
-    window.location.replace(iosStore);
+    targetUrl = iosStore;
   } else if (isAndroid) {
-    window.location.replace(androidStore);
-  } else {
-    window.location.replace("https://vedatakcan.github.io/mejigames/");
+    targetUrl = androidStore;
   }
+
+  document.getElementById("fallback-link").href = targetUrl;
+  window.location.replace(targetUrl);
 </script>
 
 </body>
