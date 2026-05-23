@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meji Redirect</title>
 </head>
 <body>
@@ -10,7 +11,7 @@
   const ua = navigator.userAgent || navigator.vendor || window.opera;
 
   const isAndroid = /Android/i.test(ua);
-  const isIOS = /iPhone|iPad|iPod/i.test(ua);
+  const isIOS = /iPhone|iPad|iPod/i.test(ua) && !isAndroid;
 
   const iosStore = "https://apps.apple.com/tr/app/meji-brain-training/id6752789849";
   const androidStore = "https://play.google.com/store/apps/details?id=com.vedatakcan.meji";
