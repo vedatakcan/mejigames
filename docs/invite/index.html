@@ -2,27 +2,27 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Redirecting...</title>
+  <title>Meji Redirect</title>
 </head>
 <body>
 
 <script>
-  const ua = navigator.userAgent || navigator.vendor;
+  const ua = navigator.userAgent || navigator.vendor || window.opera;
 
-  const isIOS = /iPhone|iPad|iPod/i.test(ua);
   const isAndroid = /Android/i.test(ua);
+  const isIOS = /iPhone|iPad|iPod/i.test(ua);
 
   const iosStore = "https://apps.apple.com/tr/app/meji-brain-training/id6752789849";
   const androidStore = "https://play.google.com/store/apps/details?id=com.vedatakcan.meji";
 
-  if (isIOS) {
-    window.location.href = iosStore;
+  if (isAndroid) {
+    window.location.replace(androidStore);
   } 
-  else if (isAndroid) {
-    window.location.href = androidStore;
+  else if (isIOS) {
+    window.location.replace(iosStore);
   } 
   else {
-    window.location.href = "https://vedatakcan.github.io/mejigames/";
+    window.location.replace("https://vedatakcan.github.io/mejigames/");
   }
 </script>
 
