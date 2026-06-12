@@ -9,14 +9,16 @@
   <meta property="og:title" content="Meji" />
   <meta property="og:url" content="https://vedatakcan.github.io/mejigames/invite/" />
   
-  <meta property="og:image" content="https://vedatakcan.github.io/mejigames/meji-icon.png" />
+  <!-- KRİTİK DÜZELTME: Logo linkinin arasına docs/ eklendi -->
+  <meta property="og:image" content="https://vedatakcan.github.io/mejigames/docs/meji-icon.png" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="300" />
   <meta property="og:image:height" content="300" />
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Meji">
-  <meta name="twitter:image" content="https://vedatakcan.github.io/mejigames/meji-icon.png">
+  <!-- KRİTİK DÜZELTME: Twitter için de logo linkinin arasına docs/ eklendi -->
+  <meta name="twitter:image" content="https://vedatakcan.github.io/mejigames/docs/meji-icon.png">
 
   <style>
     body {
@@ -44,6 +46,12 @@
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
     }
+    .message {
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 10px;
+      color: rgba(255, 255, 255, 0.9);
+    }
     a {
       color: #3498db;
       text-decoration: none;
@@ -56,7 +64,8 @@
 <body>
 
 <div class="loader"></div>
-<a id="fallback-link" href="#">➜</a>
+<div class="message">Meji'ye yönlendiriliyorsunuz...</div>
+<a id="fallback-link" href="#">Eğer yönlendirilmediyseniz tıklayın ➜</a>
 
 <script>
   const ua = navigator.userAgent || navigator.vendor || window.opera;
