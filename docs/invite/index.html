@@ -3,22 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meji</title>
+  <title>Meji: Brain Training</title>
 
+  <!-- Sosyal Medya Önizleme Ayarları (Meta Etiketleri) -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Meji" />
+  <meta property="og:title" content="Meji: Brain Training" />
+  <meta property="og:description" content="Zihnini sınırlarını zorla ve beyin egzersizleriyle kendini geliştir! Arkadaşının davetine katıl." />
   <meta property="og:url" content="https://vedatakcan.github.io/mejigames/invite/" />
   
-  <!-- KRİTİK DÜZELTME: Logo linkinin arasına docs/ eklendi -->
-  <meta property="og:image" content="https://vedatakcan.github.io/mejigames/docs/meji-icon.png" />
+  <!-- Sterk'teki gibi doğrudan sitenin ana dizinindeki logoyu referans alıyoruz -->
+  <meta property="og:image" content="https://vedatakcan.github.io/mejigames/meji-icon.png" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="300" />
   <meta property="og:image:height" content="300" />
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Meji">
-  <!-- KRİTİK DÜZELTME: Twitter için de logo linkinin arasına docs/ eklendi -->
-  <meta name="twitter:image" content="https://vedatakcan.github.io/mejigames/docs/meji-icon.png">
+  <meta name="twitter:title" content="Meji: Brain Training">
+  <meta name="twitter:description" content="Zihnini sınırlarını zorla!">
+  <meta name="twitter:image" content="https://vedatakcan.github.io/mejigames/meji-icon.png">
 
   <style>
     body {
@@ -29,13 +31,14 @@
       justify-content: center;
       height: 100vh;
       margin: 0;
-      background-color: #0d0e35;
+      /* Meji'nin kendi kurumsal koyu mavi tonu */
+      background-color: #0d0e35; 
       color: white;
       text-align: center;
     }
     .loader {
       border: 4px solid rgba(255, 255, 255, 0.1);
-      border-top: 4px solid #3498db;
+      border-top: 4px solid #3498db; /* Meji'nin açık mavi yükleme çizgisi */
       border-radius: 50%;
       width: 40px;
       height: 40px;
@@ -85,6 +88,8 @@
   }
 
   document.getElementById("fallback-link").href = targetUrl;
+  
+  // Yönlendirmeyi tetikle
   window.location.replace(targetUrl);
 </script>
 
